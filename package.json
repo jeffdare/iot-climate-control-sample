@@ -1,6 +1,6 @@
 {
   "name"         : "iot-tooling",
-  "version"      : "0.0.2",
+  "version"      : "0.0.3",
   "description"  :  "IoT tooling based on Node-RED",
   "contributors":
   [
@@ -14,7 +14,8 @@
     }
   ],
   "scripts": {
-    "start": "node main.js"
+    "start": "node main.js",
+    "test": "touch /tmp/temp.txt"
   },
   "license": "EPL-1.0",
   "dependencies": {
@@ -35,7 +36,10 @@
     "node-red-node-cf-cloudant":"0.x",
     "node-red-contrib-ibmpush":"0.x",
     "node-red-contrib-bluemix-hdfs":"0.x",
-	  "node-red-dashboard":"^2.1.0",
+	"node-red-dashboard":"^2.1.0",
+	"node-red-contrib-ibm-wiotp-device-ops" :"*",
+	"node-red-contrib-iot-virtual-device":"*",
+	"node-red-contrib-scx-ibmiotapp":"*",
     "request":"~2.36.0",
     "ibmiotf" : "*",
   	"serve-static": "^1.10.0",
@@ -48,8 +52,7 @@
     "cf-deployment-tracker-client": "*"
   },
   "engines": {
-    "node": "0.12.x"
-
+    "node": "4.x"
   },
   "config": {
     "engine-strict": true
