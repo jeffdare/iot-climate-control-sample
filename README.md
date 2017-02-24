@@ -1,5 +1,8 @@
+
 # IoT Climate Control Sample
 IoT reference sample for Climate Control
+
+![Bluemix Deployments](https://deployment-tracker.mybluemix.net/stats/45924395dd671b4771c8fb3bc695b5df/badge.svg)
 
 ## Deploy the app on Bluemix
 You can deploy your own instance to Bluemix.
@@ -8,7 +11,7 @@ To do this, you can either use the _Deploy to Bluemix_ button for an automated d
 ### Using the Deploy to Bluemix button.
 Use the *"Deploy to Bluemix"* button below, to deploy this app to Bluemix using IBM DevOps.
 
-[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/ibm-watson-iot/iot-climate-control-sample.git)
+[![Deploy to Bluemix](https://deployment-tracker.mybluemix.net/stats/45924395dd671b4771c8fb3bc695b5df/button.svg)](https://bluemix.net/deploy?repository=https://github.com/ibm-watson-iot/iot-climate-control-sample)
 
 ### Manually deploying to Bluemix.
 
@@ -46,8 +49,14 @@ Use the *"Deploy to Bluemix"* button below, to deploy this app to Bluemix using 
   $ cf api https://api.ng.bluemix.net
   $ cf login
   ```
+7. Create the required services in Bluemix.
 
-7. Push the app to Bluemix.
+  ```
+  $ cf create-service iotf-service iotf-service-free iottool-IoT-devx
+  $ cf create-service cloudantNoSQLDB Lite iottool-cloudantNoSQLDB-devx
+  ```
+
+8. Push the app to Bluemix.
 
   ```
   $ cf push
