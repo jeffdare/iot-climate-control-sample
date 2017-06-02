@@ -16,7 +16,7 @@ If you are in the US South region, use the below button
 
 For other regions, please click the below *Deploy to Bluemix*
 
-[![Deploy to Bluemix](https://console.ng.bluemix.net/devops/setup/deploy/button.png)](http://ibm.biz/Bdi8VY)
+[![Deploy to Bluemix](https://console.ng.bluemix.net/devops/setup/deploy/button_x2.png)](http://ibm.biz/Bdi8VY)
 
 ### Manually deploying to Bluemix.
 
