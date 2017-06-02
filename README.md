@@ -10,8 +10,13 @@ To do this, you can either use the [_Create Toolchain_](http://ibm.biz/BdiKSi) b
 
 ### Using the Create Toolchain  button.
 Use the *"Create Toolchain"* button below, to deploy this app to Bluemix using IBM DevOps.
+If you are in the US South region, use the below button
 
 [![Create Toolchain](https://console.ng.bluemix.net/devops/graphics/create_toolchain_button.png)](http://ibm.biz/BdiKSi)
+
+For other regions, please click the below *Deploy to Bluemix*
+
+[![Deploy to Bluemix](https://console.ng.bluemix.net/devops/setup/deploy/button_x2.png)](http://ibm.biz/Bdi8VY)
 
 ### Manually deploying to Bluemix.
 
