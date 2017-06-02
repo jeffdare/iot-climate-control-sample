@@ -3,7 +3,7 @@ applications:
 - services:
   - iottool-cloudantNoSQLDB-devx
   - iottool-IoT-devx
-  memory: 768M
+  memory: 256M
   instances: 1
   name: iottool
   disk_quota: 1024M
